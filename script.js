@@ -1,5 +1,5 @@
 // Importation de la base de données Firestore à partir de Config.js
-import { db } from './Config.js';
+import { db } from './config.js';
 import { collection, addDoc, getDocs, orderBy, query, limit } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 // Variables globales
