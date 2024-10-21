@@ -1,0 +1,129 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-color: #8a8a8a;
+}
+
+/* Conteneur global pour le jeu et le leaderboard */
+.container {
+    display: flex;
+    justify-content: space-between; /* Met les deux sections côte à côte */
+    width: 90%; /* Ajuste la largeur totale du conteneur */
+    max-width: 1200px;
+    height: 80vh; /* Ajuste la hauteur globale */
+    margin: auto; /* Centrer le conteneur dans la page */
+    position: relative;
+    background-color: #8a8a8a;
+}
+    
+/* Section du jeu */
+#gameContainer {
+    position: relative;
+    flex: 3; /* Le jeu prend plus d'espace */
+    height: 100%;
+    background-color: #ffffff;
+    border: 2px solid #616161;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cube {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    display: none; /* Caché tant que le jeu n'a pas démarré */
+    cursor: pointer;
+}
+
+#scoreDisplay {
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+/* Section du leaderboard */
+#leaderboardContainer {
+    width: 25%; /* Fixe la largeur du leaderboard */
+    height: 100%;
+    background-color: #dadada;
+    border: 2px solid #616161;
+    padding: 10px;
+    box-sizing: border-box; /* S'assure que la bordure est incluse dans la taille */
+    overflow-y: auto; /* Scroller si la liste dépasse */
+    margin-left: 20px; /* Espace entre le jeu et le leaderboard */
+}
+
+#leaderboardContainer h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#leaderboardList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboardList li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#startButton {
+    cursor: pointer;
+border: solid rgb(199, 199, 199);
+font-family: "system-ui";
+font-size: 14px;
+color: rgb(8, 7, 7);
+padding: 8px 30px;
+transition: 819ms;
+width: 192px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+border-radius: 12px;
+background: linear-gradient(90deg, rgb(177, 189, 201) 0%, rgb(227, 227, 227) 100%);
+--hover-borderc: #d6d6d6;
+--hover-color: #ffffff;
+--hover-bgc: #b5b3b3;
+--hover-width: 192px;
+}
+
+#startButton:hover {
+color: rgb(255, 255, 255);
+width: 192px;
+background: rgb(181, 179, 179) none repeat scroll 0% 0% / auto padding-box border-box;
+border-color: rgb(214, 214, 214);
+border-width: 2px;
+border-style: solid;
+}
+
+.hidden {
+    display: none; /* Cacher les éléments avec cette classe */
+}
+#playerName {
+    padding: 6px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #5e5858;
+    background-color: #e2e2e2;
+    color: #282020;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 2px 0px 5px rgba(66,66,66,.33);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+
+
+}
+#playerName:focus {
+    outline:none;
+}

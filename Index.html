@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test De Vitesse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section pour le jeu -->
+        <div id="gameContainer">
+            <h2>Testez Votre Vitesse</h2>
+            <input type="text" id="playerName" placeholder="Entrez votre pseudo" />
+            <button id="startButton">Commencer</button>
+            <div id="scoreDisplay">Score : 0</div>
+            <div id="cube"></div>
+        </div>
+
+        <!-- Section pour le classement -->
+        <div id="leaderboardContainer">
+            <h3>Classement</h3>
+            <ul id="leaderboardList">
+                <!-- Classement affiché ici -->
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="Config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
