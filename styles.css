@@ -42,6 +42,7 @@ body {
     position: absolute;
     display: none; /* Caché tant que le jeu n'a pas démarré */
     cursor: pointer;
+    border-radius: 50px;
 }
 
 #scoreDisplay {

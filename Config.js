@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-// Configuration de Firebase
+
 const firebaseConfig = {
     apiKey: "AIzaSyBnHFrUxXFnJusq9btIfrCBOHXI628YVEs",
     authDomain: "speed-test-266e0.firebaseapp.com",
@@ -12,8 +12,7 @@ const firebaseConfig = {
     measurementId: "G-0927KS41EB"
 };
 
-// Initialisation de Firebase
+
 const app = initializeApp(firebaseConfig);
 
-// Initialisation de Firestore
-export const db = getFirestore(app); // Exportation de Firestore
+export const db = getFirestore(app);
