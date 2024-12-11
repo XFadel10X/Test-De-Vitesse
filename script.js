@@ -113,11 +113,3 @@ function endGame() {
 
 // Charger le classement à l'ouverture de la page
 loadLeaderboard();
-document.addEventListener('mousemove', function(e) {
-    const navbar = document.querySelector('.navbar');
-    if (e.clientX < 100) {
-        navbar.style.left = '0';
-    } else {
-        navbar.style.left = '-199px';
-    }
-});
