@@ -1,5 +1,5 @@
 
-import { db } from './config.js';
+import { auth, db } from './config.js';
 import { collection, addDoc, getDocs, orderBy, query, limit } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 
 

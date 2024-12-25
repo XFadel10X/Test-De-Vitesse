@@ -1,6 +1,7 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js';
+import { getAuth } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js';
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js';
+import { setLogLevel } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBnHFrUxXFnJusq9btIfrCBOHXI628YVEs",
@@ -15,5 +16,7 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
-export const db = getFirestore(app);
+export { auth, db, app};
