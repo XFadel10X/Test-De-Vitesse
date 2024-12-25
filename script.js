@@ -1,7 +1,19 @@
 
 import { auth, db } from './config.js';
 import { collection, addDoc, getDocs, orderBy, query, limit } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+async function testFirebase() {
+    try {
+        const querySnapshot = await getDocs(collection(db, "leaderboard"));
+        console.log("Firebase fonctionne !");
+        querySnapshot.forEach((doc) => {
+            console.log(doc.id, " => ", doc.data());
+        });
+    } catch (e) {
+        console.error("Erreur Firebase :", e);
+    }
+}
 
+testFirebase();
 
 const cube = document.getElementById('cube');
 const gameContainer = document.getElementById('gameContainer');
